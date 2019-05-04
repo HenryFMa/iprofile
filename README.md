@@ -6,7 +6,9 @@
 - Evolvable present
 - Local offline first
 - Universally linkable
-...continued...
+
+_...continued..._
+
 - Beautifully crafted
 - Consistently distributed
 
