@@ -1,0 +1,14 @@
+{
+	"name": "iProfile",
+	"description": "The Elegant Profile, Everyone's Personal Profile",
+	"form": {
+		"src": {
+			"html": {
+				"index": "index.html"
+			}
+		},
+		"reliance": {
+			"itemplates": "/ipfs/QmRHWAFLWrwrNUdkZTaPcgusD6rhesTizNBF8f2ayLcd1G"
+		}
+	}
+}
