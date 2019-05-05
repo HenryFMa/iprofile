@@ -18,7 +18,7 @@ _...continued..._
 
 > Say OK to `IBIPFS would like to be working for you`, if you'd like to make your own profile
 
-> Click the `iEvolve` button to start authoring the source web page, and try `Let's Go` when you feel satisfied with your work
+> Click the `iEvolve` button for authoring the source web page, and `Let's Go` when you feel satisfied with your work
 
 ### Q&A
 
@@ -30,8 +30,10 @@ _A: It's locally inside your browser, and globally distributed with IPFS._
 
 :doing:
 - **_`v0.0.1` - common - iProfile for General_**
-- * Inline WYSIWYG authoring, with `?`
-- * Local automatic persistence as default
+- * Inline WYSIWYG authoring, with [`?`](https://github.com/search?o=desc&q=WYSIWYG&s=stars&type=Repositories)
+- * * [react-page: Next-gen, highly customizable content editor for the browser.](https://github.com/react-page/react-page)
+- * * [medium-editor: Medium.com WYSIWYG editor clone.](https://github.com/yabwe/medium-editor)
+- * Automatic persistence and immutable history // `IBIPFS`&`[HistoryAPI](https://developer.mozilla.org/en-US/docs/Web/API/History_API)`?
 - * Publishing via IPFS, with `IBIPFS`
 
 :done:
