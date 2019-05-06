@@ -14,11 +14,11 @@ _...continued..._
 
 ### Usage
 
-> `() => visit via any IPFS gateway @ /ipfs/QmckDvhpwX4SEhJvFr6BG9D2xpsdijvk2wE32ffpRzNvTv/` [Origin](https://service.edening.net/ipfs/QmckDvhpwX4SEhJvFr6BG9D2xpsdijvk2wE32ffpRzNvTv/)
+> `() => visit via any IPFS gateway @ /ipfs/QmSW33BmBhCXQdqxL8ENc2Dy1J6JfuYM38n4YZmiNp1f3B/` [Origin](https://service.edening.net/ipfs/QmSW33BmBhCXQdqxL8ENc2Dy1J6JfuYM38n4YZmiNp1f3B/)
 
 > Say OK to `IBIPFS would like to be working for you`, if you'd like to make your own profile
 
-> Click the `iEvolve` button for authoring the source web page, and `Let's Go` when you feel satisfied with your work
+> Click the `iEvolve` button for authoring inline, and `Let's Go` when you feel satisfied with your work
 
 ### Q&A
 
@@ -29,7 +29,7 @@ _A: It's locally inside your browser, and globally distributed with IPFS._
 ### Forwarding
 
 :doing:
-- **_`v0.0.1` - common - iProfile for General_**
+- **_`v 1.0.0` - spring - Germination_**
 - * Inline WYSIWYG authoring, with [`?`](https://github.com/search?o=desc&q=WYSIWYG&s=stars&type=Repositories)
 - * * [react-page: Next-gen, highly customizable content editor for the browser.](https://github.com/react-page/react-page)
 - * * [medium-editor: Medium.com WYSIWYG editor clone.](https://github.com/yabwe/medium-editor)
@@ -37,7 +37,13 @@ _A: It's locally inside your browser, and globally distributed with IPFS._
 - * Publishing via IPFS, with `IBIPFS`
 
 :done:
-- **_`v0.0.0` - prototype - iProfile for Classical Web Fans_**
+
+---
+- **_`v 0.0.1` - common - iProfile for General_**
+- * Inline WYSIWYG authoring, with [medium-editor: Medium.com WYSIWYG editor clone.](https://github.com/yabwe/medium-editor)
+
+---
+- **_`v 0.0.0` - prototype - iProfile for Classical Web Fans_**
 - * IBIPFS: The distributed web in browser
 - * * In-browser IPFS Node
 - * * Adding `PeerId` as html meta `publisher`
