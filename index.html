@@ -173,16 +173,14 @@
   <script type="text/javascript" src="/ipfs/QmRHWAFLWrwrNUdkZTaPcgusD6rhesTizNBF8f2ayLcd1G/mdb-jquery/js/bootstrap.min.js"></script>
   <!-- MDB core JavaScript -->
   <script type="text/javascript" src="/ipfs/QmRHWAFLWrwrNUdkZTaPcgusD6rhesTizNBF8f2ayLcd1G/mdb-jquery/js/mdb.min.js"></script>
-  <script type="text/javascript" src="/ipfs/Qmbod38fEfMtF8udMvqDww7TgBoSEtrnWnj9cahtPYHeC7/ibipfs.js"></script>
   <!-- MDB -->
+  <script type="text/javascript" src="/ipfs/Qmb82r7ZesPauyqAucpGbWksxQBEHXVAvgcfgoqwtE3XSi/localforage.min.js"></script>
+  <script type="text/javascript" src="/ipfs/Qmbod38fEfMtF8udMvqDww7TgBoSEtrnWnj9cahtPYHeC7/ibipfs.js"></script>
   <script src="/ipfs/QmV6manaLuedkKY3rWeNgdVJTGeQpNLg9imjZSp9c8vxL3/js/medium-editor.js"></script>
   <!-- Initializations -->
   <script type="text/javascript">
     // IBIPFS initialization
-    let ibipfs
-
-    let editor
-    //let editables
+    let ibipfs, editor
 
     const iEvolve = () => {
       if (!ibipfs) {
@@ -192,7 +190,8 @@
       }
 
       ibipfs
-      .addFromURL(window.location)
+      .add(ibipfs.Ipfs.Buffer.from(document.documentElement.innerHTML))
+      //.addFromURL(window.location)
       .then(res => {
         ibipfs
         .cat(res[0].hash)
@@ -202,6 +201,13 @@
               text: 'Your Stuff Here',
               hideOnClick: true
             }
+          })
+
+          editor.subscribe('editableInput', (event, editable) => {
+            localforage && localforage
+            .setItem('iProfile', document.documentElement.innerHTML)
+            .then(value => console.log("editableInput: Done - localforage.setItem('iProfile')"))
+            .catch(err => console.log('Error@localforage: ' + err))
           })
 
           document.getElementById('letsGo').disabled = false
@@ -238,6 +244,28 @@
     }
 
     window.onload = () => {
+      if (localforage) {
+        localforage
+        .getItem('iProfile')
+        .then((value) => {
+          if (!value) {
+            console.log("localforage.setItem('iProfile') ...")
+
+            localforage
+            .setItem('iProfile', document.documentElement.innerHTML)
+            .then(value => console.log("Done - localforage.setItem('iProfile'): " + value))
+            .catch(err => console.log('Error@localforage: ' + err))
+          } else {
+            let decision = confirm('localforage: iProfile found! Have a look? :)')
+
+            if (decision) {
+              document.documentElement.innerHTML = value
+            }
+          }
+        })
+        .catch(err => console.log('Error@localforage: ' + err))
+      }
+
       window.addEventListener('ibipfs', (e) => {
         ibipfs = window.ibipfs
 

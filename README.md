@@ -30,20 +30,22 @@ _A: It's locally inside your browser, and globally distributed with IPFS._
 
 :doing:
 - **_`v 1.0.0` - spring - Germination_**
-- * Automatic persistence and immutable history // `IBIPFS`&`[HistoryAPI](https://developer.mozilla.org/en-US/docs/Web/API/History_API)`?
-- * Publishing via IPFS, with `IBIPFS`
-- * Inline WYSIWYG authoring, with [`?`](https://github.com/search?o=desc&q=WYSIWYG&s=stars&type=Repositories)
-- * * [react-page: Next-gen, highly customizable content editor for the browser.](https://github.com/react-page/react-page)
-- * * [medium-editor: Medium.com WYSIWYG editor clone.](https://github.com/yabwe/medium-editor)
+- * Reactive WYSIWYG authoring, with [react-page: Next-gen, highly customizable content editor](https://github.com/react-page/react-page)
 
 :done:
+
+---
+- **_`v 0.1.0` - vanilla - Cornerstone_**
+- * Auto-save and immutable-history // `IBIPFS`&`localForage`&`HistoryAPI`?
+- * Publishing via IPFS, with `IBIPFS`
+- * Inline WYSIWYG authoring, with [medium-editor: Medium.com WYSIWYG editor clone.](https://github.com/yabwe/medium-editor) :alpha:
 
 ---
 - **_`v 0.0.9` - ibipfs - local jsipfs fallback_**
 
 ---
 - **_`v 0.0.1` - common - iProfile for General_**
-- * Inline WYSIWYG authoring, with [medium-editor: Medium.com WYSIWYG editor clone.](https://github.com/yabwe/medium-editor)
+- * Inline WYSIWYG authoring, with [medium-editor: Medium.com WYSIWYG editor clone.](https://github.com/yabwe/medium-editor) :trial:
 
 ---
 - **_`v 0.0.0` - prototype - iProfile for Classical Web Fans_**

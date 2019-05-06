@@ -10,7 +10,8 @@
 		"reliance": {
 			"itemplates": "/ipfs/QmRHWAFLWrwrNUdkZTaPcgusD6rhesTizNBF8f2ayLcd1G",
 			"medium-editor": "/ipfs/QmV6manaLuedkKY3rWeNgdVJTGeQpNLg9imjZSp9c8vxL3",
-			"ibipfs": "/ipfs/Qmbod38fEfMtF8udMvqDww7TgBoSEtrnWnj9cahtPYHeC7"
+			"ibipfs": "/ipfs/Qmbod38fEfMtF8udMvqDww7TgBoSEtrnWnj9cahtPYHeC7",
+			"localforage": "/ipfs/Qmb82r7ZesPauyqAucpGbWksxQBEHXVAvgcfgoqwtE3XSi"
 		}
 	}
 }
