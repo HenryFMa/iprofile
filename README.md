@@ -14,7 +14,7 @@ _...continued..._
 
 ### Usage
 
-> `() => visit via any IPFS gateway @ /ipfs/QmSW33BmBhCXQdqxL8ENc2Dy1J6JfuYM38n4YZmiNp1f3B/` [Origin](https://service.edening.net/ipfs/QmSW33BmBhCXQdqxL8ENc2Dy1J6JfuYM38n4YZmiNp1f3B/)
+> `() => visit via any IPFS gateway @ /ipfs/QmYcJFBuZAzBDxbYfWCn3F31kMj12djCFQX5JXuBN5KL1f/` [Origin](https://service.edening.net/ipfs/QmYcJFBuZAzBDxbYfWCn3F31kMj12djCFQX5JXuBN5KL1f/)
 
 > Say OK to `IBIPFS would like to be working for you`, if you'd like to make your own profile
 
@@ -30,13 +30,16 @@ _A: It's locally inside your browser, and globally distributed with IPFS._
 
 :doing:
 - **_`v 1.0.0` - spring - Germination_**
+- * Automatic persistence and immutable history // `IBIPFS`&`[HistoryAPI](https://developer.mozilla.org/en-US/docs/Web/API/History_API)`?
+- * Publishing via IPFS, with `IBIPFS`
 - * Inline WYSIWYG authoring, with [`?`](https://github.com/search?o=desc&q=WYSIWYG&s=stars&type=Repositories)
 - * * [react-page: Next-gen, highly customizable content editor for the browser.](https://github.com/react-page/react-page)
 - * * [medium-editor: Medium.com WYSIWYG editor clone.](https://github.com/yabwe/medium-editor)
-- * Automatic persistence and immutable history // `IBIPFS`&`[HistoryAPI](https://developer.mozilla.org/en-US/docs/Web/API/History_API)`?
-- * Publishing via IPFS, with `IBIPFS`
 
 :done:
+
+---
+- **_`v 0.0.9` - ibipfs - local jsipfs fallback_**
 
 ---
 - **_`v 0.0.1` - common - iProfile for General_**
