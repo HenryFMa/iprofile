@@ -14,7 +14,7 @@ _...continued..._
 
 ### Usage
 
-> `() => visit via any IPFS gateway @ /ipfs/QmYcJFBuZAzBDxbYfWCn3F31kMj12djCFQX5JXuBN5KL1f/` [Origin](https://service.edening.net/ipfs/QmYcJFBuZAzBDxbYfWCn3F31kMj12djCFQX5JXuBN5KL1f/)
+> `() => visit via any IPFS gateway @ /ipfs/QmaoVM4rPYfuimUsNcdNgEQCSc5T93ffiveu88xMN2ej8D/` [Origin](https://service.edening.net/ipfs/QmaoVM4rPYfuimUsNcdNgEQCSc5T93ffiveu88xMN2ej8D/)
 
 > Say OK to `IBIPFS would like to be working for you`, if you'd like to make your own profile
 
@@ -36,8 +36,8 @@ _A: It's locally inside your browser, and globally distributed with IPFS._
 
 ---
 - **_`v 0.1.0` - vanilla - Cornerstone_**
-- * Auto-save and immutable-history // `IBIPFS`&`localForage`&`HistoryAPI`?
-- * Publishing via IPFS, with `IBIPFS`
+- * Auto-save, with `IBIPFS`&`localForage`
+- * Publishing and immutable-history via IPFS , with `IBIPFS`
 - * Inline WYSIWYG authoring, with [medium-editor: Medium.com WYSIWYG editor clone.](https://github.com/yabwe/medium-editor) :alpha:
 
 ---

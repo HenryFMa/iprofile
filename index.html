@@ -34,6 +34,8 @@
           <ul class="navbar-nav mr-auto">
             <h1>iProfile</h1>
           </ul>
+          <ul id="history" class="navbar-nav mr-auto">
+          </ul>
           <!-- Right -->
           <ul class="navbar-nav nav-flex-icons">
             <li class="nav-item">
@@ -191,7 +193,6 @@
 
       ibipfs
       .add(ibipfs.Ipfs.Buffer.from(document.documentElement.innerHTML))
-      //.addFromURL(window.location)
       .then(res => {
         ibipfs
         .cat(res[0].hash)
@@ -224,13 +225,18 @@
         return
       }
 
+      let url = window.location.href
+      let cidIndex = url.lastIndexOf('/ipfs/') + 6
+      
+      appendHistory(url.slice(cidIndex))
+
       ibipfs
       .add(ibipfs.Ipfs.Buffer.from(document.documentElement.innerHTML))
       .then(res => {
+
         let decision = confirm('Evolved! Have a look? :)')
 
         if (decision) {
-          let url = window.location.href
 
           url = url.slice(0, url.lastIndexOf('/ipfs/')) + '/ipfs/' + res[0].hash
 
@@ -240,6 +246,24 @@
         }
       })
       .catch(err => alert('Oops! Error: ' + err))
+    }
+
+    const appendHistory = (hid) => {
+      let hisElem = document.getElementById('history')
+
+      let hisItem, liElem
+
+      if (hisElem) {
+        hisItem = document.createElement('a')        
+        hisItem.setAttribute('href', '/ipfs/' + hid)
+        hisItem.innerHTML = 'History[' + hid.slice(0, 5) + '...' + hid.slice(-16) + ']'
+
+        liElem = document.createElement('li')
+        liElem.setAttribute('class', 'nav-item')
+        
+        liElem.append(hisItem)
+        hisElem.append(liElem)
+      }
     }
 
     window.onload = () => {
